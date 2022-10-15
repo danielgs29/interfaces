@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset</title>
+    <link rel="stylesheet" href="fieldset.css">
+</head>
+<body>
+    <form action="#">
+        <fieldset id="first">
+            <legend>Datos Personales</legend>
+            <table>
+             <tr>
+             <td>Nombre</td>
+             <td>Apellidos</td>
+             <td>DNI</th>
+             </tr>
+             <tr>
+                <td>
+                    <input type="text" id="fname" name="fname"><br><br>
+                </td>
+                <td>
+                    <input type="text" id="fname" name="fname"><br><br>
+                </td>
+                <td>
+                    <input type="text" id="fname" name="fname"><br><br>
+                </td>
+             </tr>
+             <tr>
+                <td>Localidad de nacimiento</td>
+                <td>Provincia:</td>
+                <td>Fecha de nacimiento:</td>
+             </tr>
+             <tr>
+                <td>
+                    <input type="text" id="fname" name="fname"><br><br>
+                </td>
+                <td>
+                    <select name="cars" id="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                      <br>
+                      <input type="submit" value="Submit">
+                </td>
+                <td>
+                    <input type="date" id="fname" name="fname"><br><br>
+                </td>
+             </tr>
+             <tr>
+                <td colspan="2">Dirección</td>
+                <td>Provincia:</td>
+             </tr>
+             <tr>
+                <td colspan="2">
+                    <input type="text" id="text" name="fname"><br><br>
+                </td>
+                <td>
+                    <input type="text" id="fname" name="fname"><br><br>
+                </td>
+            </tr>
+            </table>
+            </fieldset>
+            <fieldset>
+                <legend>Forma de Acceso</legend>
+                <ul>
+                    <li><input type="radio" id="html" name="fav_language" value="HTML">
+                        <label for="html">Directo</label><br></li>
+                    <ul>
+                        <li>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">Bachillerato</label><br>
+                        </li>
+                        <li><input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">Experimental</label><br>
+                        </li>
+                        <li><input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">COU</label><br>
+                        </li>
+                        <li><input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">FP2</label><br>
+                        </li>
+                        <li><input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">Otros(especifique) <input type="text" id="fname" name="fname"></label><br>
+                        </li>
+                    </ul>
+                    <li><input type="radio" id="html" name="fav_language" value="HTML">
+                        <label for="html">Prueba Libre</label><br></li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Documentos adjuntos</legend>
+                <table>
+                    <tr>
+                        <td> <input type="checkbox">
+                            <label for="vehicle1"> Fotocopia DNI</label>
+                        </td>
+                        <td> <input type="checkbox">
+                            <label for="vehicle1"> Certificado Academico</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <input type="checkbox">
+                            <label for="vehicle1"> Otros Documentos (especifique)</label>
+                        </td>
+                        <td>
+                            <input type="text" id="fname" name="fname">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset></br>
+        <button>Enviar solicitud</button>
+</body>
+</html>

@@ -1,0 +1,26 @@
+fieldset{
+    background-color: aqua;
+    width: 700px;
+}
+#first{
+    background-color: rgb(0, 148, 136);
+    
+}
+legend{
+    background-color: white;
+    border: solid black 2px;
+    
+}
+li{
+    list-style: none;
+}
+legend::first-letter {
+    font-size: 130%;
+    font-weight: bold;
+  }
+#text{
+    width: 350px;
+}
+button{
+    background-color: rgb(255, 142, 179);
+}

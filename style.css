@@ -1,0 +1,17 @@
+h1{
+    color: black;
+}
+div p{
+    color: green;
+}
+h2{
+    color: blue;
+}
+div h2 p:first-child{
+   color: black;
+}
+div h2 p:last-child{
+    color: red;
+}
+
+
