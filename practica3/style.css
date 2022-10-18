@@ -1,0 +1,23 @@
+body{font-size: 14px; text-indent: 3em;}
+p{font-size: 12px; } 
+#palabra{
+    color: fuchsia;
+}
+#decimal{
+ color: rgb(255,0,255);
+}
+#hexadecimal{
+    color: #ff00ff ; 
+}
+#porcentajes{
+   color:rgb(100%,0%,100%) ; 
+}
+#total{
+    background-color: rgb(16, 252, 0, 0);
+}
+#media{
+    background-color: rgb(16, 252, 0,0.5);
+}
+#sin{
+    background-color: rgb(16, 252, 0,1);
+}
