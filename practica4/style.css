@@ -1,0 +1,53 @@
+#uno{
+    border: red 2px solid;
+    margin: 0;
+}
+#dos{
+    border: red 1px solid;
+    margin-left: 3em;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+#tres{
+    border: orangered 1px solid;
+    margin-left: 0;
+    margin-top: 2em;
+    margin-bottom: 0;
+    margin-right: 5em;
+}
+ #container{
+    margin: 0.3em 0.1em 2em;
+    padding: 0;
+    border: 1px blue solid;
+ }
+
+ #containerex{
+    border: 1px rgb(153, 153, 153) solid;
+ }
+
+ #otro{
+    border: 1px red solid;
+ }
+
+ #otro2{
+        border: solid;
+        border-width: 10px 1em thick thin;
+        border-color: red blue green;
+        border-style:dashed double dotted;
+ }
+
+ .exterior{
+    border: solid red 2px;
+    border-radius: 20px;
+    width: 600px;
+ }
+
+ .interior{
+    border: solid blue 4px;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 0px 15px 20px 40px;
+ }
+
