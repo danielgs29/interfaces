@@ -1,0 +1,90 @@
+
+*{
+    margin: 0;
+    list-style:square;
+}
+.header{
+    background: linear-gradient(to bottom, rgb(105, 182, 140), white);
+    box-shadow: 10px 7px 7px gray;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.menu{
+    float: right;
+}
+.menu ol{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-top: 10px;
+    margin-right: 10px; 
+}
+
+.menu ol li{
+    border: green solid 0.5px;
+    padding: 5px;
+    color: green;
+    box-shadow: 2px 2px 2px gray;
+    list-style: none;
+}
+#titulo{
+    margin-top: 15px;
+    margin-bottom: 3px;
+    padding-left: 10px;
+}
+#titulo p{
+    padding-left: 0;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 2px gray;
+}
+
+.container{
+    display: flex;
+}
+
+.contenidos{
+    width: 400px;
+    float: left;
+    margin-right: 2%;
+    margin-left: 2%;
+    
+}
+.titulos{
+    background-color: rgb(105, 182, 140);
+    margin-top: 40px;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    box-shadow: 4px 4px 4px gray;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 3px;
+}
+a{
+    color: green;
+    text-decoration: underline dotted;
+}
+span{
+    font-style: italic; 
+}
+#fin{
+  border: 1px solid green;
+   margin-top: 50px;
+}
+#final{
+    text-align: center;
+}
+
+ ol li:hover{
+    background-color: rgb(105, 182, 140);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
