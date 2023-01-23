@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#boton1").click(function(){
+                $("#p1,#encabezado").css("display","none");;
+                $(this).prop("disabled",true)
+                $("#boton2").prop("disabled",true)
+            })
+        })
+
+        $(document).ready(function(){
+            $("#boton2").click(function(){
+                $("#p1").css("display","none");
+            })
+        })
+        $(document).ready(function(){
+            $("#boton3").click(function(){
+                $("#link1,#link2").css("display","none");
+            })
+        })
+        $(document).ready(function(){
+            $("#boton4").click(function(){
+                $("#link1").css("display","none");
+            })
+        })
+        $(document).ready(function(){
+            $("#boton5").click(function(){
+                (location.reload())
+            })
+        })
+
+        $(document).ready(function(){
+            $("table tr:even").css("background-color","red");
+            $("table tr:odd").css("background-color","green");
+            })
+
+
+    
+       
+    </script>
+</head>
+
+
+
+
+<body>
+    <h1 id="encabezado">Encabezado</h1>
+    <p id="p1">Parrafo 1</p>
+    <br>
+    <p id="p2">Parrafo 2</p>
+    <br>
+    <a href="" id="link1">Enlace 1: a ventana nueva</a>
+    <br>
+    <a href="" id="link2">Enlace 2: mismo ventana</a>
+    <br>
+    <input type="button" value="Ocultar Parrafo 1 y Encabezado" id="boton1">
+    <input type="button" value="Ocultar Parrafo 1 " id="boton2">
+    <input type="button"  value="Ocultar Enlace" id="boton3">
+    <input type="button"  value="Ocultar Venstana nueva" id="boton4">
+    <input type="button"  value="Mostrar Todos" id="boton5">
+
+    <table style="border: 1px solid;" id="tabla">
+        <tr>
+            <td>hola</td>
+        </tr>
+        <tr>
+            <td>buenas</td>
+        </tr>
+        <tr>
+            <td>tardes</td>
+        </tr>
+        <tr>
+            <td>adios</td>
+        </tr>
+    </table>
+
+</body>

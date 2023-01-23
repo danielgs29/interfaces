@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Eliminar elementos de la lista dropdown</title>
+    <script>
+        function quitarcolor() {
+            let select = document.getElementById("colorSeleccionar");
+            select.remove(select.selectedIndex);
+            let texto=""
+            let cantidad=select.childElementCount;
+            for(let i=0;i<cantidad;i++){
+                texto+=" "+select.options[i].text;
+            }
+
+            alert("Numero de opciones"+" "+select.childElementCount+" "+ texto );
+        }
+
+        function añadir(){
+            let nuevo=document.getElementById("nuevo").value
+            let select = document.getElementById("colorSeleccionar");
+            let selectn = document.createElement("option");
+            selectn.text=nuevo
+            select.appendChild(selectn);
+        }
+
+    </script>
+</head>
+
+<body>
+    <form>
+        <select id="colorSeleccionar">
+            <option>Rojo</option>
+            <option>Verde</option>
+            <option>Blanco</option>
+            <option>Azul</option>
+        </select>
+        <input type="button" onclick="quitarcolor()" value="Selecciona y Elimina">
+        <input type="text" id="nuevo">
+        <input type="button" onclick="añadir()" value="Añadir">
+    </form>
+
+</body>
+
+</html>
