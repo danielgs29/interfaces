@@ -7,7 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        .rojo{
+             color: red;
+        }
+        .tamaño{
+            font-size: 50px;
+        }
+    </style>
     <script type="text/javascript">
+
         $(document).ready(function(){
             $("#boton1").click(function(){
                 $("#p1,#encabezado").css("display","none");;
@@ -43,9 +52,29 @@
             })
 
 
-    
-       
+        $(document).ready(function(){
+            $("#rojo").click(function(){
+                $("#parrafo").addClass("rojo")
+            })
+        })
+
+        $(document).ready(function(){
+            $("#rojot").click(function(){
+                $("#parrafo").addClass("rojo","tamaño")
+            })
+        })
+
+        $(document).ready(function(){
+            $("#rojot").click(function(){
+                $("#parrafo").addClass("rojo","tamaño")
+            })
+        })
+
     </script>
+
+    <style>
+
+    </style>
 </head>
 
 
@@ -81,5 +110,12 @@
             <td>adios</td>
         </tr>
     </table>
+
+    <p id="parrafo">Cuando se haga click en los botones se realizaran asignaciones o eliminaciones de estilo en este Parrafo</p>
+
+    <button id="rojo">Asignar Color Rojo</button>
+    <button id="rojot">Asignar texto rojo y tamaño 26</button>
+    <button id="rojod">Eliminar estilo color rojo</button> 
+    <button>Eliminar texto color rojo  y el tamaño 26</button>
 
 </body>

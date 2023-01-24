@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        #seleccionado{
+            border: blue solid;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $("#cafeteria").change(function(){
+                $("#lista").append("<li>Cafeteria")
+            })
+            $("#aula").change(function(){
+                $("#lista").append("<li>aula")
+            })
+            $("#biblioteca").change(function(){
+                $("#lista").append("<li>biblioteca")
+            })
+            $("#jefatura").change(function(){
+                $("#lista").append("<li>jefatura")
+            })
+        })
+    </script>
+</head>
+<body>
+    <p>Indica cual de estos espacios has visitado durante el curso</p>
+    <fieldset>
+        <input type="checkbox" name="cafeteria" id="cafeteria">cafeteria <br> 
+        <input type="checkbox" name="aula" id="aula">Aula<br> 
+        <input type="checkbox" name="biblioteca" id="biblioteca"> biblioteca <br>
+        <input type="checkbox" name="jefatura" id="jefatura">jefatura
+    </fieldset> <br>
+
+    <div id="seleccionado" >
+        <p>usted ha visitado</p>
+        <ol id="lista">
+            
+        </ol>
+    </div>
+</body>
+</html>

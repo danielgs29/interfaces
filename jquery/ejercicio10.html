@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        #seleccionado{
+            border: blue solid;
+            color: blue;
+            width: 27%;
+        }
+        fieldset{
+            width: 25%;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $("#cafeteria").change(function(){
+                $("#lista").append("<li>Cafeteria")
+                $("#cafeteria").prop("disabled",true)
+                
+            })
+            $("#aula").change(function(){
+                $("#lista").append("<li>aula")
+                $("#aula").prop("disabled",true)
+            })
+            $("#biblioteca").change(function(){
+                $("#lista").append("<li>biblioteca")
+                $("#biblioteca").prop("disabled",true)
+            })
+            $("#jefatura").change(function(){
+                $("#lista").append("<li>jefatura")
+                $("#jefatura").prop("disabled",true)
+            })
+
+            $("#secretaria").change(function(){
+                $("#lista").append("<li>secretaria")
+                $("#secretaria").prop("disabled",true)
+            })
+
+            $("#patio").change(function(){
+                $("#lista").append("<li>patio")
+                $("#patio").prop("disabled",true)
+            })
+
+            $("#vaciar").click(function(){
+                location.reload();
+            })
+        })
+    </script>
+</head>
+<body>
+    <p>Indica cual de estos espacios has visitado durante el curso</p>
+    <fieldset>
+        <input type="checkbox" name="cafeteria" id="cafeteria">cafeteria <br> 
+        <input type="checkbox" name="aula" id="aula">Aula<br> 
+        <input type="checkbox" name="biblioteca" id="biblioteca"> biblioteca <br>
+        <input type="checkbox" name="patio" id="patio"> patio <br>
+        <input type="checkbox" name="jefatura" id="jefatura">jefatura<br>
+        <input type="checkbox" name="secretaria" id="secretaria">Secretaria
+    </fieldset> <br>
+
+    <div id="seleccionado" >
+        <p>usted ha visitado</p>
+        <ol id="lista">
+            
+        </ol>
+    </div>
+    <button id="vaciar">Limpiar datos</button>
+</body>
+</html>
