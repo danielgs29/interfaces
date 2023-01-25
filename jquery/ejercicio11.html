@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        h3 {
+            border: 1px solid #34d29f;
+            background: #34D29F;
+            font-weight: normal;
+            color: #2b2b2b;
+        }
+
+        img {
+            width: 2em;
+            height: 2em;
+        }
+
+        #contenido {
+            width: 37em;
+            height: 30em;
+        }
+    </style>
+</head>
+<script>
+     $(document).ready(function(){
+        $("#contraer").click(function(){
+           $("p").hide();
+        })
+        $("#desplegar").click(function(){
+           $("p").each(function(index){
+            $(this).delay(1000*index).slideDown();
+           })
+           
+        })
+
+     })
+</script>
+
+<body>
+    <input id="contraer" type="button" value="Contraer" />
+    <input id="desplegar" type="button" value="Desplegar" />
+    <div id="contenido">
+        <h3><img src="img/stark.png" />Juego de tronos</h3>
+        <div class="texto">
+           <p id="antes">
+            Juego de tronos (título original en inglés: A Game of Thrones) es una novela de fantasía escrita por el
+            autor estadounidense George R. R. Martin en 1996 y ganadora del premio Locus en 1997. Se trata de la primera
+            entrega de la serie de gran popularidad Canción de hielo y fuego. La novela se caracteriza por su estética
+            medieval,1 el uso de numerosos personajes bien detallados, la contraposición de puntos de vista de los
+            múltiples protagonistas, su trama con giros inesperados y un uso sutil y moderado de los aspectos mágicos
+            tan comunes en otras obras de fantasía
+            </p>
+        </div>
+        <h3><img src="img/lannister.png" />Choque de reyes</h3>
+        <div class="texto">
+            <p id="despues">
+                Choque de reyes (A Clash of Kings) es el segundo libro de la saga de fantasía épica Canción de hielo y
+                fuego del escritor George R. R. Martin. La obra fue publicada en noviembre de 1998 en Reino Unido y la
+                traducción al español llegó en abril de 2003. Este volumen de la saga continúa con el estilo de su
+                predecesor: múltiples protagonistas, personajes ambiguos en sus intenciones y con personalidad compleja,
+                giros inesperados de la trama y sutiles elementos mágicos que irán ganado intensidad en los volúmenes
+                siguientes
+            </p>
+        </div>
+        <h3><img src="img/baratheon.png" />Tormenta de espadas</h3>
+        <div class="texto">
+            <p id="despues">
+                Tormenta de espadas (A Storm of Swords) es el tercer libro de la saga de literatura fantástica Canción
+                de hielo y fuego y su autor es George R. R. Martin. El original en inglés se publicó en agosto del 2000
+                en el Reino Unido, en noviembre del mismo año en Estados Unidos y en junio de 2005 en España. Esta
+                novela es la más extensa de la serie hasta el momento. Es tan larga que los editores decidieron
+                publicarla en varios tomos: en el Reino Unido se dividió en dos partes, en Francia se dividió en cuatro,
+                etc. En España se hicieron dos tomos de más de 600 páginas cada uno, se publicaron simultáneamente y se
+                vendieron juntos.
+            </p>
+        </div>
+        <h3><img src="img/targaryen.png" />Festín de cuervos</h3>
+        <div class="texto">
+            <p id="despues">
+                Festín de cuervos (A Feast for Crows, en inglés) es el cuarto libro de la saga de literatura fantástica
+                Canción de hielo y fuego escrito por George R. R. Martin. La obra se publicó en octubre de 2005; por su
+                parte, la versión en español se puso a la venta el 21 de diciembre de 2007, editada por la editorial
+                Gigamesh.
+            </p>
+            <p id="despues">
+                Debido a la complejidad y extensión que estaba alcanzando, los editores decidieron separarla en dos
+                tomos, publicados simultáneamente, pero George R. R. Martin prefirió publicar sólo una parte de lo que
+                inicialmente tenía previsto, siguiendo únicamente los acontecimientos de parte de los personajes
+                principales, y ampliando los detalles de la trama con nuevos capítulos. La segunda parte, simultánea en
+                el tiempo de narración, y que incluirá el resto de personajes será Danza de dragones, que también ha
+                sido publicada en castellano por Gigamesh.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
